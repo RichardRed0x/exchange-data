@@ -62,3 +62,11 @@ I have produced equivalent graphs for all of the assets being tracked, they are 
 I'm planning to drop the temporal resolution to hourly snapshots and leave some version of these scripts running longer term.
 
 The raw data is in a MySQL database and too large to share easily, but if you want access let me know and I can set you up. The aggregated data-set is [here](data/orderbook-observations-long.csv).
+
+![Order book depth over time (5% from price)](img/ADA-orderbooks-time.png)
+![Order book depth over time (5% from price)](img/DASH-orderbooks-time.png)
+![Order book depth over time (5% from price)](img/EOS-orderbooks-time.png)
+![Order book depth over time (5% from price)](img/LTC-orderbooks-time.png)
+![Order book depth over time (5% from price)](img/XMR-orderbooks-time.png)
+![Order book depth over time (5% from price)](img/XTZ-orderbooks-time.png)
+![Order book depth over time (5% from price)](img/ZEC-orderbooks-time.png)
