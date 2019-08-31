@@ -26,26 +26,27 @@ DCR has the smallest market cap of the considered assets, so it is not reasonabl
 
 DCR order books still look thin relative to other assets, but after taking market cap into account the disparity is not as great.
 
-The table below shows the mean observed size of orders up to 5% from the current price on each side (-5% is buy side). If you wanted or were willing to move the price by 5% to get (rid of) some of the asset, this is how much you would need (in USD). The formatting is rough because it's dumped directly from a script, but this allows it to be easily updated (the [csv file]() this is based on is more likely to be updated).
+The table below shows the mean observed size of orders up to 5% from the current price on each side (-5% is buy side). If you wanted or were willing to move the price by 5% to get (rid of) some of the asset, this is how much you would need (in USD). The formatting is rough because it's dumped directly from a script, but this allows it to be easily updated (the [csv file](data/xtabs-liquidity-at-5.csv) this is based on is more likely to be updated).
 
-| Pair    | binance_-5 | binance_5 | bitfinex_-5 | bitfinex_5 | bittrex_-5 | bittrex_5 | huobi_-5 | huobi_5 | kraken_-5 | kraken_5 |
-| ------- | ---------: | --------: | ----------: | ---------: | ---------: | --------: | -------: | ------: | --------: | -------: |
-| ADABTC  |     409000 |    270000 |          NA |         NA |     203000 |     98400 |   165000 |   93100 |    101000 |    34000 |
-| ADAUSD  |     329000 |    139000 |          NA |         NA |      44100 |     30100 |   115000 |   76200 |    106000 |    82600 |
-| DASHBTC |     138000 |     85500 |      338000 |     364000 |     141000 |     88900 |   193000 |  103000 |     84500 |    31800 |
-| DASHUSD |      49400 |     27900 |      376000 |     385000 |         NA |        NA |   186000 |  154000 |     42500 |    73000 |
-| DCRBTC  |      36100 |     23800 |          NA |         NA |      50500 |     20000 |    20300 |    5710 |        NA |       NA |
-| DCRUSD  |         NA |        NA |          NA |         NA |         NA |        NA |    15600 |    6690 |        NA |       NA |
-| EOSBTC  |     340000 |    265000 |      979000 |     887000 |      63600 |     34600 |   434000 |  220000 |    177000 |   129000 |
-| EOSUSD  |     344000 |    264000 |     1540000 |    1500000 |      23100 |     16200 |   345000 |  282000 |    217000 |   234000 |
-| LTCBTC  |     795000 |   1340000 |     1030000 |    1020000 |     292000 |    122000 |   305000 |  249000 |    233000 |   143000 |
-| LTCUSD  |     495000 |    385000 |      907000 |    1100000 |     107000 |     83000 |   957000 |  680000 |    349000 |   329000 |
-| XMRBTC  |     466000 |    303000 |      757000 |     694000 |     161000 |     94200 |   189000 |  139000 |    260000 |   219000 |
-| XMRUSD  |      92700 |     70100 |      674000 |     622000 |         NA |        NA |   188000 |  123000 |    233000 |   206000 |
-| XTZBTC  |         NA |        NA |       96600 |      66300 |         NA |        NA |    25700 |   17800 |    139000 |    69200 |
-| XTZUSD  |         NA |        NA |       76300 |      74200 |         NA |        NA |    26300 |    3180 |     71100 |    52400 |
-| ZECBTC  |     141000 |    107000 |      140000 |     124000 |      89400 |     64500 |   180000 |   95500 |     63400 |    25000 |
-| ZECUSD  |      70600 |     34300 |      416000 |     402000 |      20500 |     13700 |   258000 |  112000 |     71700 |    62600 |
+|Pair   |binance_-5|binance_5|bitfinex_-5|bitfinex_5|bittrex_-5|bittrex_5|huobi_-5|huobi_5|kraken_-5|kraken_5|
+|-------|----------|---------|-----------|----------|----------|---------|--------|-------|---------|--------|
+|ADABTC |366       |247      |NA         |NA        |275       |135      |140     |93     |118      |31.9    |
+|ADAUSD |343       |125      |NA         |NA        |45.2      |27.4     |105     |88.2   |142      |79      |
+|DASHBTC|172       |79.6     |339        |349       |129       |56.9     |183     |99.8   |98.6     |38      |
+|DASHUSD|42        |25.2     |500        |437       |NA        |NA       |158     |136    |60.5     |62.9    |
+|DCRBTC |70.3      |18.7     |NA         |NA        |44.5      |19.3     |26.2    |14.3   |NA       |NA      |
+|DCRUSD |NA        |NA       |NA         |NA        |NA        |NA       |11.6    |8.26   |NA       |NA      |
+|EOSBTC |289       |241      |1010       |949       |69.4      |39.6     |483     |251    |227      |129     |
+|EOSUSD |384       |361      |1750       |1670      |32        |21.2     |384     |320    |224      |223     |
+|LTCBTC |512       |414      |1090       |1070      |295       |142      |350     |260    |265      |169     |
+|LTCUSD |616       |510      |1030       |1120      |138       |98.3     |1040    |697    |376      |337     |
+|XMRBTC |401       |313      |759        |717       |155       |84.1     |158     |105    |275      |225     |
+|XMRUSD |118       |59.8     |737        |701       |NA        |NA       |162     |101    |243      |244     |
+|XTZBTC |NA        |NA       |81.4       |75.6      |NA        |NA       |30.6    |15.6   |118      |193     |
+|XTZUSD |NA        |NA       |79.5       |72.5      |NA        |NA       |10.4    |3.31   |98       |47.7    |
+|ZECBTC |152       |116      |158        |119       |90.8      |79.1     |159     |81.1   |71.6     |23.7    |
+|ZECUSD |61.1      |33.8     |457        |459       |21        |21       |203     |89.4   |74.8     |49.5    |
+
 
 For DCR there are typically more orders on the buy side ($36k at Binance, $50k at Bittrex, $36k at Huobi across both BTC and USD pairs) than the sell side ($24k Binance, $20k Bittrex, $13k Huobi).
 
