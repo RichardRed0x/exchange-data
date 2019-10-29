@@ -70,3 +70,4 @@ The raw data is in a MySQL database and too large to share easily, but if you wa
 ![Order book depth over time (5% from price)](img/XMR-orderbooks-time.png)
 ![Order book depth over time (5% from price)](img/XTZ-orderbooks-time.png)
 ![Order book depth over time (5% from price)](img/ZEC-orderbooks-time.png)
+
