@@ -4,7 +4,7 @@ See this previous report for background on order book data collection and compar
 
 This analysis is based on the publicly available order book data, collected through the APIs of the various exchanges. One of the main objectives was to compare the order books before and after the market making activities began, to ensure that the service is being provided as described and see how it is affecting the markets.
 
-![DCR order book depth at 5% over/under current price](/DCR-orderbooks-time-Oct15.png)
+![DCR order book depth at 5% over/under current price](DCR-orderbooks-time-Oct15.png)
 
 This graph shows the impact of i2's activities on the order books (starting Oct 22). The lines represent the amount available to buy and sell within 5% of the current price, and indeed you can see that around $50k of additional liquidity appeared and has been maintained most of the time since then. The graph also shows that there were some times where the target level of liquidity was not available. This is to be expected to some degree, and the proposal itself promised 90% uptime, aside from exchange outages.
 
@@ -35,7 +35,7 @@ What these figures don't show is whether the target was missed by a little or a 
 
 Looking at the sell side 2% target, it is clear that on many observations the order books had around 80-90% of the target liquidity. There are other observations where very little liquidity was available, when presumably i2 were not active in making the market - these are identified by the cluster of bars near 0, representing the state of the order books when i2 are offline.
 
-It is also interesting to consider why the order books got thin at certain points in time, and the degree to which the liquidity provision was available during periods of price volatility. The graph below shows order book depth at the +/- 5% level (top), history of filled orders on 3 pairs (middle), and volume traded per hour  (bottom).![Order books, completed orders, volume per hour](/orderbooks-history-volume.png)
+It is also interesting to consider why the order books got thin at certain points in time, and the degree to which the liquidity provision was available during periods of price volatility. The graph below shows order book depth at the +/- 5% level (top), history of filled orders on 3 pairs (middle), and volume traded per hour  (bottom).![Order books, completed orders, volume per hour](orderbooks-history-volume.png)
 
 There does seem to be a relationship between price movement and market making down time, with significant moves up in price being followed by a period of low availability on the sell side (perhaps as i2 have to re-fill the exchange account, if they sold a lot of the DCR they held there).
 
