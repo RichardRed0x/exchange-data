@@ -39,13 +39,39 @@ It is also interesting to consider why the order books got thin at certain point
 
 There does seem to be a relationship between price movement and market making down time, with significant moves up in price being followed by a period of low availability on the sell side (perhaps as i2 have to re-fill the exchange account, if they sold a lot of the DCR they held there).
 
+### Response from i2 Trading
 
+I showed the analysis above to i2 Trading and they have pointed out that I am using the spot price for each market and assuming that their orders will be within X% symmetrically either side of this. In practice, i2 base their orders on a price which is aggregated across a number of different exchanges (so as to avoid being in a situation where their orders cross on different exchanges). 
 
+Also, if a big order is filled, when i2 replace the orders they would do so with a spread which is asymmetric around the spot price. For example, if all buy orders were filled at the -2% level across multiple exchanges, the new buy orders may be as low as -4% from the new spot price. The way the data I'm using is recorded makes it hard to look in detail at whether the liquidity was spread a little wider, if it was outside the range I was using it would be missing from my data.
 
+Also, when i2 cancel and replace their orders this takes ~300ms, and it is something they can do as often as every 1 to 2 seconds. When my observations have been recorded during these 300ms movements it will appear as though the orders were not there (and this would be counted as a "miss" using my method), when in practice the orders were still on the books aside from a momentary lapse. In the versions of the order book line graph without the rolling average you can see these temporary drops, and they do account for some proportion of the "misses" in the table.
 
+### Data from i2 Trading
 
+i2 have provided me with spreadsheets containing their completed trades from Binance and Bittrex, it has not been possible to obtain such exports from Huobi. These files do not offer the same level of assurance as read access to their exchange accounts via API. It would be possible for i2 to insert additional rows in these sheets to claim higher trading volume, but it wouldn't be easy to do this without making it obvious and I think it's unlikely they have done so. 
 
+#### Binance
 
+From Oct 22 - Oct 31, i2 traded 17,000 DCR on Binance DCR/BTC market, roughly equal buy and sell orders.
 
+From Nov 1 - Nov 12 i2 traded 63,700 DCR on Binance DCR/BTC market, with slightly more in sell orders (~52%).
 
+From Oct 22 - Oct 31, i2 incurred trading fees of 8.5 DCR and 0.014 BTC on Binance - around $250.
+
+From Nov 1 - Nov 12, i2 incurred trading fees of 30.8 DCR and 0.07 BTC on Binance - around $1,300.
+
+#### Bittrex
+
+From Oct 22 - Oct 31, i2 traded 7,000 DCR on Bittrex DCR/BTC market, roughly equal buy and sell orders (~52% buys).
+
+From Oct 22 - Oct 31, i2 traded 3,600 DCR on Bittrex DCR/USDT market, ~57% in sell orders.
+
+From Nov 1 - Nov 12 i2 traded 12,600 DCR on Bittrex DCR/BTC market, ~60% in sell orders.
+
+From Nov 1 - Nov 12 i2 traded 770 DCR on Bittrex DCR/USDT market, ~57% in buy orders.
+
+From Oct 22 - Oct 31, i2 incurred trading fees of 0.03 BTC and 140 USDT on Bittrex - around $400.
+
+From Nov 1 - Nov 12 i2 incurred trading fees of 0.06 BTC and 31.5 USD on Bittrex - around $570.
 
