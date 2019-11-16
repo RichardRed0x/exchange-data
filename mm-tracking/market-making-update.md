@@ -81,7 +81,9 @@ This report is intended to give some sense of how i2 Trading's market making act
 
 In my view i2 have made a decent effort to provide the market making service so far. The price volatility of early November has presented them with a more challenging scenario in which to maintain their offers. We will see how it goes over the rest of the month.
 
-Following the [announcement](https://twitter.com/BittrexExchange/status/1194330471385186316?s=20) by Bittrex that  a USD pair will be opening on Nob 18, i2 have been instructed to cover this pair instead of one of the Huobi pairs. This means that a greater proportion of their activity will be covered by the data exports going forward, and overall uptime is likely to increase as Huobi is the exchange where this seems to have struggled most.
+Following the [announcement](https://twitter.com/BittrexExchange/status/1194330471385186316?s=20) by Bittrex that  a USD pair will be opening on Nob 18, i2 have been instructed to cover this pair instead of one of the Huobi pairs. Since Oct 22 there have been 93,600 DCR traded on the DCR/BTC and 228,300 traded on DCR/USDT - which would suggest retaining the USDT pair.
+
+This also means that a greater proportion of their activity will be covered by the data exports going forward, and overall uptime is likely to increase as Huobi is the exchange where this seems to have struggled most whereas measured "uptime" has been higher on Bittrex.
 
 I will look at improving the way the data is collected and processed for the purpose of monitoring the order books, but without data about which orders on the books belong to i2 it is not possible to know for sure how much of the available liquidity is due to them at any particular point in time.
 
