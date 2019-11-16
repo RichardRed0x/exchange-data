@@ -55,7 +55,7 @@ i2 have provided me with spreadsheets containing their completed trades from Bin
 
 From Oct 22 - Oct 31, i2 traded 17,000 DCR on Binance DCR/BTC market, roughly equal buy and sell orders.
 
-From Nov 1 - Nov 12 i2 traded 63,700 DCR on Binance DCR/BTC market, with slightly more in sell orders (~52%).
+From Nov 1 - Nov 12 i2 traded 63,700 DCR on Binance DCR/BTC market, with slightly more in sell orders (~52%). This means that i2 were involved in about 21% of the trading on this pair during this time.
 
 From Oct 22 - Oct 31, i2 incurred trading fees of 8.5 DCR and 0.014 BTC on Binance - around $250.
 
@@ -67,11 +67,27 @@ From Oct 22 - Oct 31, i2 traded 7,000 DCR on Bittrex DCR/BTC market, roughly equ
 
 From Oct 22 - Oct 31, i2 traded 3,600 DCR on Bittrex DCR/USDT market, ~57% in sell orders.
 
-From Nov 1 - Nov 12 i2 traded 12,600 DCR on Bittrex DCR/BTC market, ~60% in sell orders.
+From Nov 1 - Nov 12 i2 traded 12,600 DCR on Bittrex DCR/BTC market, ~60% in sell orders. This means that i2 were involved in about 20% of the trading on this pair during this time.
 
 From Nov 1 - Nov 12 i2 traded 770 DCR on Bittrex DCR/USDT market, ~57% in buy orders.
 
 From Oct 22 - Oct 31, i2 incurred trading fees of 0.03 BTC and 140 USDT on Bittrex - around $400.
 
 From Nov 1 - Nov 12 i2 incurred trading fees of 0.06 BTC and 31.5 USD on Bittrex - around $570.
+
+### Conclusion
+
+This report is intended to give some sense of how i2 Trading's market making activity has gone so far. The available data is not great for checking that the uptime of the market making service was on target. There are indications that 90% uptime may not have been achieved on all markets/spreads, but there are also known issues with the available data, and a couple of known ways in which available liquidity could have been missed.
+
+In my view i2 have made a decent effort to provide the market making service so far. The price volatility of early November has presented them with a more challenging scenario in which to maintain their offers. We will see how it goes over the rest of the month.
+
+Following the [announcement](https://twitter.com/BittrexExchange/status/1194330471385186316?s=20) by Bittrex that  a USD pair will be opening on Nob 18, i2 have been instructed to cover this pair instead of one of the Huobi pairs. This means that a greater proportion of their activity will be covered by the data exports going forward, and overall uptime is likely to increase as Huobi is the exchange where this seems to have struggled most.
+
+I will look at improving the way the data is collected and processed for the purpose of monitoring the order books, but without data about which orders on the books belong to i2 it is not possible to know for sure how much of the available liquidity is due to them at any particular point in time.
+
+
+
+
+
+
 
