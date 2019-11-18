@@ -1,4 +1,4 @@
-This report considers the DCR order books and market dynamics since the start of market making activities by i2 Trading. 
+This report considers the DCR order books and market dynamics since the start of market making activities by i2 Trading (see this approved [proposal](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9) for background). 
 
 See this previous report for background on order book data collection and comparison with other projects.
 
@@ -25,7 +25,7 @@ This data represents all of the orders on the books, not just i2's, so while it 
 |          | Sell side 2% | 43%         |
 |          | Sell side 4% | 69%         |
 
-These tables are based on data from Oct 22 to Nov 15, DCR/BTC on Binance, Bittrex and Huobi, and DCRUSDT on Huobi (Bittrex USDT market was added during the observation period but is not considered here). The requirements considered were to have 3 BTC or $30k available within 2%, and 5BTC or $50k available at 4%. The price in each hour was used to set the target amount of DCR which should be available, the table shows the percentage of observations where the target levels of liquidity were available.
+These tables are based on data from Oct 22 to Nov 15, DCR/BTC on Binance, Bittrex and Huobi, and DCRUSDT on Huobi (Bittrex USDT market was added during the observation period but is not considered here). The requirements considered were to have 3 BTC or $30k available within 2%, and 5 BTC or $50k available at 4%. The price in each hour was used to set the target amount of DCR which should be available, the table shows the percentage of observations where the target levels of liquidity were available.
 
 Looking at the data at each observation point suggests that the target level of liquidity was available less than half of the time on some exchanges/pairs. In particular the tight sell side orders on Bittrex were only sufficiently there on 43% of observations, this was also the weakest measure on Binance (59%). Uptime on Huobi seems to have been generally not great. 
 
@@ -75,15 +75,19 @@ From Oct 22 - Oct 31, i2 incurred trading fees of 0.03 BTC and 140 USDT on Bittr
 
 From Nov 1 - Nov 12 i2 incurred trading fees of 0.06 BTC and 31.5 USD on Bittrex - around $570.
 
+#### Huobi
+
+I have not seen any data directly from Huobi but based on an aggregated spreadsheet from i2 during the Oct 22 to Nov 12 period they traded 57,500 DCR on the BTC market and 25,000 DCR on the USDT market, incurring fees of 0.11 BTC, 86 DCR and 370 USDT.
+
 ### Conclusion
 
 This report is intended to give some sense of how i2 Trading's market making activity has gone so far. The available data is not great for checking that the uptime of the market making service was on target. There are indications that 90% uptime may not have been achieved on all markets/spreads, but there are also known issues with the available data, and a couple of known ways in which available liquidity could have been missed.
 
 In my view i2 have made a decent effort to provide the market making service so far. The price volatility of early November has presented them with a more challenging scenario in which to maintain their offers. We will see how it goes over the rest of the month.
 
-Following the [announcement](https://twitter.com/BittrexExchange/status/1194330471385186316?s=20) by Bittrex that  a USD pair will be opening on Nob 18, i2 have been instructed to cover this pair instead of one of the Huobi pairs. Since Oct 22 there have been 93,600 DCR traded on the DCR/BTC and 228,300 traded on DCR/USDT - which would suggest retaining the USDT pair.
+Following the [announcement](https://twitter.com/BittrexExchange/status/1194330471385186316?s=20) by Bittrex that  a USD pair will be opening on Nob 18, i2 have been instructed to cover this pair instead of one of the Huobi pairs. 
 
-This also means that a greater proportion of their activity will be covered by the data exports going forward, and overall uptime is likely to increase as Huobi is the exchange where this seems to have struggled most whereas measured "uptime" has been higher on Bittrex.
+This also means that a greater proportion of their activity will be covered by the data exports going forward, and overall uptime is likely to increase as Huobi is the exchange where this seems to have struggled most.
 
 I will look at improving the way the data is collected and processed for the purpose of monitoring the order books, but without data about which orders on the books belong to i2 it is not possible to know for sure how much of the available liquidity is due to them at any particular point in time.
 
