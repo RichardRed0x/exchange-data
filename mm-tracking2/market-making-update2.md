@@ -63,6 +63,9 @@ The volume is now broken down by day rather than by hour. Bittrex USDT data is o
 
 ![](orderbooks-history-volume.png)
 
-### Conclusion
+I updated my data collection scripts in mid-November, and using observations of the order books recorded every 15 minutes from then until now, the next graph shows the median order book depth at more fine-grained increments of 0.2%. The graphs show the 0-5% range, and the green boxes represent approximately the depth that should be achieved according to the terms of i2's proposal. Based on this data, they were mostly hitting the targets on Binance and Huobi, although perhaps sometimes with a slightly loose spread (which would mean "misses" using my method above).
 
-I updated my data collection methods in the middle of November, and added the new Bittrex USD market during the month. I'm planning to look in more detail at the spread at each observation using a new method next time around.
+However the Bittrex pairs look to have been significantly under-provisioned most of the time. This graph doesn't reflect down-time, which I will be looking at with this more detailed data next time around.
+
+![Median depth at different spreads, mid Nov to mid Dec](average-depth-from-mid-nov.png)
+
