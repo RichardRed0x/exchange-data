@@ -1,6 +1,8 @@
+**Note: This analysis was prepared in mid-December 2019 and shared with relevant i2 and Decred people. It was determined that it would be necessary to audit the order open/close history from i2's exchange accounts. That analysis took longer than expected, but I didn't publish this report because it raised a lot of questions that only analysis of i2's order logs could answer. I am adding a conclusion (in mid-January 2020) which explains some of the answers.**
+
 This report considers the DCR order books and market dynamics in November 2019, looking specifically at the market making activities of i2 Trading.
 
-See this previous report for background on order book data collection and early analysis.
+See [this previous report](https://www.blockcommons.red/publication/mm-tracking-1/) for background on order book data collection and early analysis.
 
 This update takes a look at November data and improves upon the analysis in some ways.
 
@@ -68,4 +70,20 @@ I updated my data collection scripts in mid-November, and using observations of 
 However the Bittrex pairs look to have been significantly under-provisioned most of the time. This graph doesn't reflect down-time, which I will be looking at with this more detailed data next time around.
 
 ![Median depth at different spreads, mid Nov to mid Dec](average-depth-from-mid-nov.png)
+
+
+
+## Conclusion
+
+Company 0 have written code to audit the order logs and check, using i2's own data, whether the conditions described in the proposal were being met continuously over time. The detailed results of these audits will not be published as the data is considered sensitive by i2 Trading. Efforts are being made to set up API accounts that will allow Company 0 to retrieve the i2 trading data directly for future audits, increasing confidence in the data further.  
+
+One of the issues observed in the open data related to USD and USDT pairs, where it transpired that i2 were basing their targets on prices denominated in BTC (1/3/5 BTC) rather than USD ($10k/$30k/$50k). After the proposal was approved a decrease in BTC's USD price meant that 5 BTC was no longer equivalent to $50k, and so the amount in open orders on USD markets was lower. This resulted in very poor performance against the metrics defined above in the analysis of the open order book data, as this was based on USD denominated targets. Analysis of i2's own data paints a more positive picture, once this ambiguity had been identified and accounted for. i2 have committed to switching over to the USD denominated targets in the near future.
+
+i2 will be invoicing for less than the full fee for November. Due to onboarding issues with OKCoin, it was agreed with Decred representatives that i2 would only operate on 5 pairs, with the invoiced fee amount adjusted down accordingly.
+
+The auditing software considers the state of i2's open orders every 60 seconds, and at each observation assesses what percentage of the target liquidity was available at each of the 3 layers (1.5%, 2% and 4% from BBO. The BBO spread is also assessed to see if it is within the required range (0.5% for BTC pairs, 0.75% for USD). These measures are averaged for the month to give a generalized "uptime" measure, and if this percentage is lower than the target of 90% uptime i2's invoice will be pro-rated downwards by a proportionate amount. Both i2 Trading and Company 0 are happy that this represents a fair way to gauge their performance in the market maker role.
+
+i2's performance according to this measure is significantly better than my analysis of the public order book data indicated. One of the issues identified with public data was missing i2's orders when they were being momentarily cancelled and moved - this is not an issue when using their order open/close data. Another issue with my analysis was that I was using the mid-point between Best Buy and Offer (BBO) to set the requirements whereas the terms of the proposal are a little looser and use the BBO points themselves (which can have a spread of 0.5-0.75%).
+
+This line of reporting is more or less obsolete now, because the variables of interest can now be calculated accurately and so there is no longer a need for the kind of approximated analysis I was undertaking with available public data.
 
