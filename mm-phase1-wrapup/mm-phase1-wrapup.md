@@ -1,6 +1,6 @@
 This report considers the last 7 months of the crypto markets, looking specifically at liquidity and the effect of market maker operations on some DCR pairs. It uses data collected from exchanges from August 2019 to April 2020.
 
-See previous reports from this series: {}
+See previous reports from this series: [1](https://blockcommons.red/publication/orderbook-analysis/) [2](https://blockcommons.red/publication/mm-tracking-1/) [3](https://github.com/RichardRed0x/exchange-data/blob/master/mm-tracking2/market-making-update2.md)
 
 I started by looking at the order book depth on DCR markets where the MM operated. This is the same basic method I was using to check how well the MM was performing previously, but now that function has been taken on by Company 0 using i2's own trading data.
 
@@ -55,7 +55,7 @@ It seems there is some missing ingredient on Bittrex USD(T) markets, and the res
 
 Let's take a look at what's been happening in the cryptocurrency markets more generally, using some data I started collecting about similar projects for comparison back in August. To compare assets I first converted all figures to USD. This graph shows open orders within 5% of current price for all the BTC and USD pairs for a selection of assets on Binance, Bittrex and Huobi.
 
-![](assets-liquidity-by-pair-5.png)
+![](D:/Dropbox/GitHub/bc/content/publication/mm-phase1-wrapup/assets-liquidity-by-pair-5.png)
 
 This graph shows the time before MM activity started, when the DCR orderbooks were very thin indeed, and you can see the difference when i2 started up in late October.
 
@@ -67,11 +67,11 @@ DCR liquidity on BTC markets was relatively unaffected by this, although on USD(
 
 To make a general comparison, the DCR chart here looks relatively flat, it is missing the sustained large increase in liquidity that has been associated with times of increased market interest in other assets. 
 
-The next graph shows the same order book depth data but as a proportion of market capitalization for each asset. 
+The next graph shows the same order book depth data but as a proportion of market capitalization for each asset. I capped these at 0.0015 because a few spikes for some assets were expanding the range making it difficult to see what was going on. 
 
-![](assets-liquidity-by-mcap-5.png)
+![](D:/Dropbox/GitHub/bc/content/publication/mm-phase1-wrapup/assets-liquidity-by-mcap-5.png)
 
-When market cap is controlled for, the DCR markets still don't look great. Also worth noting is that this only considers 3 exchanges, the 3 exchanges with the deepest order books by far. Some of the other assets considered here are also listed on other large exchanges where a significant amount of trading occurs.
+When market cap is controlled for, the DCR markets still don't look great. Also worth noting is that this only considers 3 exchanges, the 3 exchanges with the deepest DCR order books by far. Some of the other assets considered here are also listed on other large exchanges where a significant amount of trading occurs.
 
 ## Takeaways
 
@@ -79,4 +79,4 @@ There is no sign of a sustained organic increase in order book depth over the pa
 
 The volume being traded on some pairs has been quite high relative to before MM started, I don't have equivalent order data from before October for comparison but trading volume was very low then. The daily volume chart shows that trading volume increased sharply on certain days, usually associated with significant price movements. There is not a clear pattern of trading volume increasing over time.
 
-Comparing order book depth with other projects indicates that Decred is still a relatively small fish, even with the i2 orders on the books, and liquidity never really grew much beyond that.
+Comparing order book depth with other projects indicates that DCR's order books are still not very deep, even with the i2 orders on the books, and liquidity has not grown much beyond those additional orders.
