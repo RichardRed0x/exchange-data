@@ -59,13 +59,19 @@ Let's take a look at what's been happening in the cryptocurrency markets more ge
 
 This graph shows the time before MM activity started, when the DCR orderbooks were very thin indeed, and you can see the difference when i2 started up in late October.
 
-In this graph the y axis is different for each asset, this is not ideal as it can give a misleading sense of equivalence, but without this the DCR lines would all be squashed into the bottom part of the range. The other assets considered here have higher market cap than DCR, so this is to be expected to some degree, but considering where the black line appears in each plot (always at $50K) gives a sense of how much deeper the order books were for the other assets.
+In this graph the y axis is independent for each asset. This is not great as it can give a misleading sense of equivalence, but without this the DCR lines would all be squashed into the bottom part of the range. The other assets considered here have higher market cap than DCR, so this is to be expected to some degree, but considering where the black line appears in each plot (always at $50K) gives a sense of how much deeper the order books were for the other assets.
 
 Also of interest is the significant increase in order book depth during Q1 2020 for some DASH, XMR and ZEC markets, before a sharp contraction in liquidity across all assets as the prices crashed in mid-March, with a rebound in liquidity after that.
 
 DCR liquidity on BTC markets was relatively unaffected by this, although on USD(T) markets it took a hit and has not yet recovered. i2 have acknowledged issues with maintaining liquidity on these USD markets and the audit tool also picked up on them, resulting in a decrease to the fee being billed by i2 for that time.
 
 To make a general comparison, the DCR chart here looks relatively flat, it is missing the sustained large increase in liquidity that has been associated with times of increased market interest in other assets. 
+
+The next graph shows the same order book depth data but as a proportion of market capitalization for each asset. 
+
+![](assets-liquidity-by-mcap-5.png)
+
+When market cap is controlled for, the DCR markets still don't look great. Also worth noting is that this only considers 3 exchanges, the 3 exchanges with the deepest order books by far. Some of the other assets considered here are also listed on other large exchanges where a significant amount of trading occurs.
 
 ## Takeaways
 
