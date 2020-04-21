@@ -55,7 +55,7 @@ It seems there is some missing ingredient on Bittrex USD(T) markets, and the res
 
 Let's take a look at what's been happening in the cryptocurrency markets more generally, using some data I started collecting about similar projects for comparison back in August. To compare assets I first converted all figures to USD. This graph shows open orders within 5% of current price for all the BTC and USD pairs for a selection of assets on Binance, Bittrex and Huobi.
 
-![](D:/Dropbox/GitHub/bc/content/publication/mm-phase1-wrapup/assets-liquidity-by-pair-5.png)
+![](assets-liquidity-by-pair-5.png)
 
 This graph shows the time before MM activity started, when the DCR orderbooks were very thin indeed, and you can see the difference when i2 started up in late October.
 
@@ -69,7 +69,7 @@ To make a general comparison, the DCR chart here looks relatively flat, it is mi
 
 The next graph shows the same order book depth data but as a proportion of market capitalization for each asset. I capped these at 0.0015 because a few spikes for some assets were expanding the range making it difficult to see what was going on. 
 
-![](D:/Dropbox/GitHub/bc/content/publication/mm-phase1-wrapup/assets-liquidity-by-mcap-5.png)
+![](assets-liquidity-by-mcap-5.png)
 
 When market cap is controlled for, the DCR markets still don't look great. Also worth noting is that this only considers 3 exchanges, the 3 exchanges with the deepest DCR order books by far. Some of the other assets considered here are also listed on other large exchanges where a significant amount of trading occurs.
 
